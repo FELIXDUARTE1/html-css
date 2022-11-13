@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 20px;
+}
+
+html {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header nav {
+    display: none;
+}
+
+main::after {
+    content: "Olá meu nome é Glauber, mas meu nome de programador é Felix.";
+}

@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+header h1 {
+    text-align: center;
+    background-color: darkgray;
+}
+
+header li {
+    display: inline-block;
+    padding: 10px;
+    background-color: rgb(58, 57, 57);
+}
+
+header ul {
+    color: white;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+main {
+    height: 400px;
+    width: 700px;
+    background-color: darkgray;
+}
+main h2 {
+    padding-top: 20px;
+    padding-left: 150px;
+}
+main p {
+    padding: 40px 40px 0px 40px;
+}
