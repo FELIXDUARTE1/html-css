@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    height: 100vh;
+    width: 100vw;
+    background-color: blue;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    color: white;
+}
+
+@media screen and (orientation: portrait){
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    html, body {
+        background-image: url(../imagens/cev-portrait.jpg);
+        background-position: center bottom;
+    }
+}
+
+@media screen and (orientation: landscape) {
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    body {
+        background-image: url(../imagens/cev-landscape.jpg);
+        background-repeat: no-repeat;
+        background-position: center bottom;
+    }
+}
