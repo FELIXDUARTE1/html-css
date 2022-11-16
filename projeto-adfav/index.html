@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Ministerio ADFAV</title>
+    <style>
+  /* 
+  #4D85B7
+  #075ca7
+   */
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        html {
+            background-color: black;
+        }
+
+        header > h1 {
+            display: inline-block;
+            padding: 20px;
+            background-color: white;
+        }
+        header > h1 > a {
+            text-decoration: none;
+            color: #075ca7;
+        }
+        header {
+            height: 77px;
+            width: 100vw;
+            background-color: white;
+        }
+        header > i.material-icons {
+            padding-left: 60%;
+            color: #075ca7;
+        }
+        header > nav{
+            display: none;
+            text-align: center;
+            margin-top: 20px;
+        }
+        header > nav > a {
+            background-color: white;
+            border-radius: 5px;
+            border: 1px solid #075ca7;
+            color: #075ca7;
+            padding: 10px;
+            text-decoration: none;
+        }
+        header > nav > a:hover {    
+            background-color: #075ca7;
+            color: white;
+            border-radius: 10px;  
+        }
+        main {
+            background-size: cover;
+            background-position: center center;
+            height: 250px;
+            background-image: url(imagens/cruz.jpg);
+        }
+        main > section > article.text{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><a href="#">ADFAV</a></h1>
+        <i class="material-icons" onclick="cliqueMenu()">menu</i>
+        <nav id="links">
+            <a href="#">Redes Sociais</a>
+            <a href="#">Credencial</a>
+            <a href="#">Lideranças</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <article class="text">
+                <script>
+                    document.write('<p>Olá ' + nome + ' seja bem-vindo, Deus te ama.</p>')
+                </script>
+            </article>
+        </section>
+    </main>
+    <footer>
+        
+    </footer>
+    <script>
+
+        function cliqueMenu(){
+            if (links.style.display == 'block'){
+                links.style.display = 'none'
+            }else{
+                links.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+</html>
