@@ -11,6 +11,7 @@
   #4D85B7
   #075ca7
    */
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
         * {
             font-family: Arial, Helvetica, sans-serif;
             box-sizing: border-box;
@@ -33,11 +34,11 @@
         }
         header {
             height: 77px;
-            width: 100vw;
+            width: 100%;
             background-color: white;
         }
         header > i.material-icons {
-            padding-left: 50%;
+            margin-left: 50%;
             color: #075ca7;
         }
         header > nav{
@@ -58,14 +59,39 @@
             color: white;
             border-radius: 10px;  
         }
-        main {
+        main section > article.imagem {
             background-size: cover;
             background-position: center center;
             height: 250px;
             background-image: url(imagens/cruz.jpg);
         }
         main > section > article.text{
-            color: white;
+            background-color: white;
+            height: 60px;
+            width: 90vws;
+            padding: 20px 0px 0px 90px;
+            font-size: 13px;
+            color: rgb(105, 105, 105);
+        }
+        main > section > article.ovelha {
+            background-image: url(imagens/ovelha-adfavF.jpg);
+            background-position: center center;
+            
+            height: 250px;
+        }
+        main > section > article.ovelha > h2 {
+            font-family: 'Pacifico', cursive;
+            padding-left: 150px;
+            padding-top: 50px;
+            text-shadow: 5px 1px 6px black;
+            color: rgb(199, 199, 199);
+        }
+        main > section > article.ovelha > p {
+            font-family: 'Times New Roman', Times, serif;
+            padding-left: 30px;
+            margin-top: 20px;
+            text-indent: 30px;
+            color: #021525;
         }
     </style>
 </head>
@@ -75,16 +101,23 @@
         <i class="material-icons" onclick="cliqueMenu()">menu</i>
         <nav id="links">
             <a href="#">Redes Sociais</a>
-            <a href="#">Credencial</a>
+            <a href="#">Sobre Nós</a>
             <a href="#">Lideranças</a>
         </nav>
     </header>
     <main>
         <section>
+            <article class="imagem">
+            </article>
             <article class="text">
-                <script>
-                    document.write('<p>Olá ' + nome + ' seja bem-vindo, Deus te ama.</p>')
-                </script>
+                <p>Bem-vindo(a) a Assembleia de Deus Fonte de Água Viva.</p>
+            </article>
+            <article class="ovelha">
+                 <h2>Área Das Ovelhas</h2>
+                 <p>Olá, Sejam todos cheios da Graça de Deus nosso pai, que atravez de Jesus Cristo nos tem preparado um lugar no Ceu.</p>
+                 <nav>
+                    <a href="#"></a>
+                 </nav>
             </article>
         </section>
     </main>
@@ -93,6 +126,9 @@
     </footer>
     <script>
 
+        document.write('<h2>Olá ' + nome + ', seja bem vindo.</h2>')
+
+
         function cliqueMenu(){
             if (links.style.display == 'block'){
                 links.style.display = 'none'
@@ -100,6 +136,7 @@
                 links.style.display = 'block'
             }
         }
+        
     </script>
 </body>
 </html>
