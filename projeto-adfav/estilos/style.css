@@ -10,7 +10,8 @@
        margin: 0px;
        padding: 0px;
    }
-
+   
+   /* topo e navegação do site */
    html {
        background-color: black;
    }
@@ -69,6 +70,9 @@
    main > section > article.text > p{
        text-align: left;
    }
+   /* ------------------------- */
+
+   /* area da ovelha */
    main > section > article.ovelha {
        background-image: url(../imagens/ovelha-adfavF.jpg);
        background-position: center center;
@@ -105,6 +109,8 @@
        transform: translate(-10px, -10px);
        transition: transform .3s;
    }
+
+   /* area de sobre nód */
    main > section > article {
        background-color: white;
        height: 400px;
@@ -133,3 +139,24 @@
        padding-left: 45px;
        color: rgb(105, 105, 105);
    }
+    /* ---------------------------  */
+
+   /* roda pé */
+   footer {
+       background-color: white;
+       padding-top: 30px;
+   }
+   footer > h2 {
+       text-align: center;
+       font-size: 15px;
+   }
+   footer > p {
+       text-align: center;
+       padding-bottom: 20px;
+   }
+   footer > p > a {
+       font-size: 14px;
+       text-decoration: none;
+       color: rgb(105, 105, 105);
+   }
+   /* --------------------------- */
